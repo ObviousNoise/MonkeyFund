@@ -21,15 +21,37 @@ time.sleep(0.1)
 os.system('cls' if os.name == 'nt' else 'clear')
 time.sleep(1)
 
+#printing a monkey
+# Here we need to print an ASCII monkey
+#
+#
+time.sleep(2)
+os.system('cls'if os.name == 'nt' else 'clear')
 #and now we will attempt to open the stocks as a CSV
 
-file = open('Stonkdata.csv')
-csvdata = csv.reader('Stonkdata.csv')
-header = []
-header = next(csvdata)
-header
-rows = []
-for row in csvdata:
-    rows.append(row)
-row
-file.close
+# file = open('Stonkdata.csv')
+# csvdata = csv.reader('Stonkdata.csv')
+# header = []
+# header = next(csvdata)
+# header
+# rows = []
+# for row in csvdata:
+#    rows.append(row)
+#row
+# file.close
+
+
+
+def clear():
+    os.system('cls'if os.name == 'nt' else 'clear')
+
+
+
+#makes a dart fly
+def draw_dart():
+    for spaces in range (20, 1, -1):
+        time.sleep(0.05)
+        clear()
+        print("|" + spaces * " " + "<")
+
+draw_dart()
