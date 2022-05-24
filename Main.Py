@@ -13,20 +13,22 @@ import os
 import time
 import csv
 
+def clear():
+    os.system('cls'if os.name == 'nt' else 'clear')
+
 #this preps the CLI for the rest of the project                                                                                     .....it also flashes the word penis for a tenth of a second
-os.system('cls'if os.name == 'nt' else 'clear')
-time.sleep(1)
+clear()
+time.sleep(0.1)
 print("penis")
 time.sleep(0.1)
-os.system('cls' if os.name == 'nt' else 'clear')
+clear()
 time.sleep(1)
 
 #printing a monkey
 # Here we need to print an ASCII monkey
 #
 #
-time.sleep(2)
-os.system('cls'if os.name == 'nt' else 'clear')
+clear()
 #and now we will attempt to open the stocks as a CSV
 
 # file = open('Stonkdata.csv')
@@ -42,15 +44,10 @@ os.system('cls'if os.name == 'nt' else 'clear')
 
 
 
-def clear():
-    os.system('cls'if os.name == 'nt' else 'clear')
-
-
-
 #makes a dart fly
 def draw_dart():
-    for spaces in range (20, 1, -1):
-        time.sleep(0.05)
+    for spaces in range (150, 1, -1):
+        time.sleep(0.001)
         clear()
         print("|" + spaces * " " + "<")
 
